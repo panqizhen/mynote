@@ -15,5 +15,6 @@ git remote rm origin//删除来源
 	remote = origin
 	merge = refs/heads/master
 表示分支
-git可以
+git可以保存在本地，可以看历史记录和还原，推送到远程仓库的无法撤销，远程仓库主要用于远程协作，让分支合并进去
+
 
