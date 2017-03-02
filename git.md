@@ -10,11 +10,10 @@ git merge tmp
 git config --global credential.helper wincred//将登陆信息保存在本地
 git clone https://github.com/panqizhen/mynote.git//直接从远程克隆就不需要配置了
 git remote rm origin//删除来源
-
 在文件config
 [branch "master"]
 	remote = origin
 	merge = refs/heads/master
 表示分支
-
+git可以
 
