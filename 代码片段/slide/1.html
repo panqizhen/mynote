@@ -1,0 +1,148 @@
+<style type="text/css">
+    .nav {
+        width: 1100px;
+        height: 560px;
+        /*border: 1px solid red;*/
+        margin-left: 140px;
+        position: relative;
+        cursor: pointer;
+        margin-top: 15px;
+        overflow: hidden;
+        /*border: 1px solid red*/
+    }
+    
+    .nav #nav-all {
+        width: auto;
+        height: 560px;
+        position: absolute;
+        left: -30px;
+    }
+    
+    .nav .nav-i {
+        width: 194px;
+        height: 300px;
+        background: #fff;
+        border: 1px solid #d8d8d8;
+        float: left;
+        margin-left: 30px;
+    }
+    
+    .nav .nav-img {
+        text-align: center;
+        /* padding-top: 50px;*/
+    }
+    
+    .nav .nav-img img {
+        width: 194px;
+        height: 200px;
+    }
+    
+    .nav .nav-name {
+        width: 192px;
+        height: 30px;
+        background: #f2f2f2;
+        margin-top: 5px;
+        line-height: 30px;
+    }
+    
+    .nav .nav-name a {
+        font-size: 16px;
+        font-family: '微软雅黑';
+        padding-left: 10px;
+        cursor: pointer;
+    }
+    
+    .nav .nav-name a:hover {
+        color: #4a7abe;
+    }
+    
+    #last {
+        position: absolute;
+        left: 0;
+        top: 50px;
+    }
+    
+    #next {
+        position: absolute;
+        right: 0;
+        top: 50px;
+    }
+    
+    .last-next {
+        /*display: none;*/
+        cursor: pointer;
+    }
+</style>
+</head>
+
+<body>
+    <div class="nav" id="nav">
+        <div id="nav-all">
+            <div class="nav-i">
+                <div class="nav-img">
+                    <img src="img/.jpg" />
+                </div>
+                <div class="nav-name">
+                    <a></a>
+                </div>
+            </div>
+            <div class="nav-i">
+                <div class="nav-img">
+                    <img src="img/.jpg" />
+                </div>
+                <div class="nav-name">
+                    <a></a>
+                </div>
+            </div>
+            <div class="nav-i">
+                <div class="nav-img">
+                    <img src="img/.jpg" />
+                </div>
+                <div class="nav-name">
+                    <a></a>
+                </div>
+            </div>
+            <div class="nav-i">
+                <div class="nav-img">
+                    <img src="img/.jpg" />
+                </div>
+                <div class="nav-name">
+                    <a></a>
+                </div>
+            </div>
+            <div class="nav-i">
+                <div class="nav-img">
+                    <img src="img/.jpg" />
+                </div>
+                <div class="nav-name">
+                    <a></a>
+                </div>
+            </div>
+
+        </div>
+        <a class="last-next" id="last">
+            <img src="img/left.png" />
+        </a>
+        <a class="last-next" id="next">
+            <img src="img/right.png" />
+        </a>
+    </div>
+    <script src="play.js" type="text/javascript" charset="utf-8"></script>
+
+    <script type="text/javascript">
+        var scrollPic_02 = new ScrollPic();
+        scrollPic_02.scrollContId = "nav-all"; //存放所有轮播元素的div
+        scrollPic_02.arrLeftId = "last"; //左箭头ID
+        scrollPic_02.arrRightId = "next"; //右箭头ID
+        scrollPic_02.frameWidth = 1102; //显示框宽    sfdasdfakfl;jlkajka;d度
+        scrollPic_02.pageWidth = 226; //翻页宽度
+        scrollPic_02.speed = 10; //移动速度(毫秒，越小越快)
+        scrollPic_02.space = 20; //每次移动像素(单位px，越大越快)
+        scrollPic_02.autoPlay = true; //自动播放:true|false
+        scrollPic_02.autoPlayTime = 2; //自动播放间隔时间(秒)
+        scrollPic_02.initialize(); //初始化
+        //--><!]]>
+    </script>
+</body>
+
+</html>
