@@ -1,0 +1,1 @@
+homestead更改配置后更新:vagrant reload --provision

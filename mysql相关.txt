@@ -1,0 +1,2 @@
+1.汉字字段按字母顺序排序：
+select * from goods order by CONVERT(title USING GBK) asc。

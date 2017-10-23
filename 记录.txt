@@ -1,0 +1,21 @@
+.LOG
+
+11:47 2017/10/16
+调试atom
+18:54 2017/10/16
+安装atom插件
+进入atom的安装目录（windows) C:\Users\pqzco\.atom\packages
+2.在https://atom.io/packages 找到自己要安装的插件，进入插件详情页面，repo里会有github地址，比如我安装color-picker
+3.在命令行里，git clone https://github.com/thomaslindstrom/color-picker.git68
+4.cd color-picker
+5.npm install
+6.重启atom
+8:00 2017/10/17
+header("content-type=text/html;charset=utf-8");
+error_reporting(E_ALL & ~E_NOTICE)//报所有错误,除了NOTICE
+error_reporting(E_ALL ^ E_NOTICE)//报所有错误,除了NOTICE
+php_ini("max_execution_time", 300);//设置最大运行时间
+
+16:25 2017/10/20
+delete from test  where id in (select id from (select * from test where id <13) as t1)
+mysql 要多套一层查询才能运行,delete和update适用
