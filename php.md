@@ -52,3 +52,4 @@ while(!feof($fp))，作为循环读取，判断结束的条件
 文件大小file_size();
 删除文件unlink()
 文件锁定：fclock()，当一个文件被打开并且在读写操作前应该被锁住
+unset()掉的值是null
