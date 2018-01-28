@@ -1,1 +1,4 @@
 homestead更改配置后更新:vagrant reload --provision
+mysql 5.7解压后默认没用data文件夹,需要运行命令 mysqld initialize
+然后查看data目录下的.err文件中有随机生成的密码
+css text-overflow属性

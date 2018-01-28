@@ -19,3 +19,28 @@ php_ini("max_execution_time", 300);//设置最大运行时间
 16:25 2017/10/20
 delete from test  where id in (select id from (select * from test where id <13) as t1)
 mysql 要多套一层查询才能运行,delete和update适用
+21:47 2017/12/8
+ignore_user_abort();//关掉浏览器，PHP脚本也可以继续执行. 
+set_time_limit(0);// 通过set_time_limit(0)可以让程序无限制的执行下去 
+$interval=60*30;// 每隔半小时运行 
+do{ 
+//这里是你要执行的代码 
+sleep($interval);// 等待5分钟 
+}while(true); 
+
+9:02 2017/12/9
+dir /s /b /a-d | find /v /c "*.php" //列出PHP文件数量
+21:07 2017/12/18
+ php stripslashes() 函数处理过多的转义。 
+19:27 2017/12/22
+mysql日志时区
+set GLOBAL log_timestamps = SYSTEM
+19:00 2017/12/29
+ssh公钥覆盖 authorized_keys
+复制代码
+cat <your_key> ~/.ssh/authorized_keys
+追加到authorized_keys的末尾
+复制代码
+cat <your_key>> ~/.ssh/authorized_keys
+7:53 2018/1/22
+timestraps字段低版本只能有一个选择自动按时间戳更新,5.6,5.7版本可以多个
